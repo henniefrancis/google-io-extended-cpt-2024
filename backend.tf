@@ -1,9 +1,9 @@
 terraform {
   required_version = "1.9.0"
   backend "remote" {
-    organization = var.organization_name
+    organization = "dotcoresolutions"
     workspaces {
-      name = var.workspace_name
+      name = "google-io-extended-cpt-2024"
     }
   }
   required_providers {

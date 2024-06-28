@@ -19,6 +19,8 @@ resource "google_storage_bucket" "google-io-extended-cpt-2024-google-storage-buc
   project                     = var.google_project.googleioextendedcpt2024
   labels = merge(var.default_tags,
     {
-      extra-label = "<label_value"
+      cloudprovider = "google-cloud"
+      event         = "google-io-extended-2024-bucket"
+      location      = "cape-town"
   })
 }

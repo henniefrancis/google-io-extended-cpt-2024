@@ -2,41 +2,41 @@
 variable "environment" {
   type        = string
   description = "The SDLC Environment this is being deployed in"
-  default     = "<environment>"
+  default     = "dev"
 }
 
 variable "default_tags" {
   description = "Default Tags"
   default = {
-    team        = "<team_name>"
-    owner       = "<owner_name>"
-    repository  = "<repository_name>"
-    workload    = "<workload_name>"
-    environment = "<environment>"
+    team        = "dev-team"
+    owner       = "dotcore-solutions"
+    repository  = "google-io-extended-cpt-2024"
+    workload    = "common"
+    environment = "dev"
   }
 }
 
 variable "organization_name" {
   description = "The name of your organization"
-  default = "<organization_name>"
+  default     = "dotcoresolutions"
 }
 
 variable "workspace_name" {
   description = "The workspace name in Terraform Cloud"
-  default = "<workspace_name>"
+  default     = "google-io-extended-cpt-2024"
 }
 
 #======================================= GCP =======================================#
 variable "google_region" {
   description = "The regions to choose from to deploy in GCP"
   default = {
-    us = "<region>"
+    us = "us-central1"
   }
 }
 
 variable "google_project" {
   description = "The project to choose from to deploy in GCP"
   default = {
-    googleioextendedcpt2024 = "<google_project>"
+    googleioextendedcpt2024 = "google-io-extended-cpt-2024"
   }
 }
