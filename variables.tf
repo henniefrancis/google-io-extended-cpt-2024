@@ -37,6 +37,6 @@ variable "google_region" {
 variable "google_project" {
   description = "The project to choose from to deploy in GCP"
   default = {
-    googleioextendedcpt2024 = "google-io-extended-cpt-2024"
+    googleioextendedcpt2024 = "mystic-column-427619-j1"
   }
 }
